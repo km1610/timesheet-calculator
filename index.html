@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Timesheet Calculator</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1 has-text-centered">Timesheet Calculator</h1>
+        <form>
+          <div class="field">
+            <label class="label">Start Time</label>
+            <div class="control">
+              <input class="input" type="text" id="start-time" value="09:00 AM">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">End Time</label>
+            <div class="control">
+              <input class="input" type="text" id="end-time" value="05:00 PM">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Break Duration</label>
+            <div class="control">
+              <input class="input" type="text" id="break-duration" value="1:00">
+            </div>
+          </div>
+          <div class="field is-grouped is-grouped-centered">
+            <div class="control">
+              <button class="button is-primary" id="calculate">Calculate</button>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Total Hours</label>
+            <div class="control">
+              <input class="input" type="text" id="total-hours" disabled>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
